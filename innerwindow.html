@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>final</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main2.css">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<style>
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px black; 
+  background-color: #C0C0C0;
+}
+::-webkit-scrollbar-thumb {
+  background: #9F6070; 
+  border: 3px outset;
+  border-color: #E4D2DA #D0B1B8 #D0B1B8 #E4D2DA;
+}
+::-webkit-scrollbar-thumb:hover {
+   background: #9F6070; 
+  border: 3px inset;
+  border-color: #E4D2DA #D0B1B8 #D0B1B8 #E4D2DA;
+}
+
+</style>
+</head>
+<body>
+<div class="flicker"></div>
+<center><img src="img/welcome.gif" class="welcome"><br>
+  <div id="banner-images" width="300px"></div><center>
+  <br><img src="img/cross.gif"><img src="img/rat.gif"><img src="img/cross.gif"><br>
+  <div class="icon"> <img src="img/thygod.gif"> <img src="img/god2.gif"> <img src="img/jesus.gif"> <img src="img/thygod.gif"> <img src="img/god2.gif"> <img src="img/jesus.gif"> </div>
+    <br>
+<div class="icon">today is smack ass <i><div id="day-text" class="icon"> </div></i></div><img src="img/bleh2.png"><br><span style="font-size:1rem"><a href="newwindow.html">click here</a></span><br>
+<br><br>
+
+
+
+
+
+
+
+
+ <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+  var d = new Date();
+var days = ["Sunday","Smonday","Stuesday","Swednesday","Sthursday","Sfriday","Saturday"];
+document.getElementById("day-text").innerHTML = days[d.getDay()];
+      </script>
+<script> 
+var images = ['grave.jpeg', 'kitty.jpeg', 'garden.jpeg', 'psalm.gif', 'psalm.jpeg'];
+ 
+$('<img class="fade-in" src="img/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-images');
+</script>
+</body>
+</html>

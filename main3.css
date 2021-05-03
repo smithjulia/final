@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: #0000ee;
+    text-align: center;
+    color: red;
+    font-size: 2.5rem;
+    overflow-y: scroll;
+}
+
+.open {
+	width: 100vw;
+	height: 100%;
+}
+.special {
+	color: transparent;
+	font-size: 3.5rem;
+	position: fixed;
+	top:35%;
+	left: 45%;
+}
+a {
+	color: transparent;
+}
+
+.hell {
+	position: fixed;
+	top:10vh;
+	left: 10vh;
+	width: 200px;
+	display: none;
+}
+
+.special:hover .hell {
+	display: block;
+}
+
+.pointin {
+	position: fixed;
+	top:40%;
+	left: 45%;
+	width: 100px;
+}

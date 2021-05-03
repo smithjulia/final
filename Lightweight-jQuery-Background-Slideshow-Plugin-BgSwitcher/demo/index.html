@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Demo - jQuery.BgSwitcher</title>
+	<meta name="viewport" content="initial-scale=1,width=720">
+	<link rel="stylesheet" href="style.css">
+	<script src="../lib/jquery.js"></script>
+	<script src="../jquery.bgswitcher.js"></script>
+</head>
+<body>
+	<div id="bs-demo"></div>
+
+
+<script>
+!function($) {
+	var $demo = $('#bs-demo'),
+		template = $('#bs-template').html();
+
+	$.BgSwitcher.defaultConfig.images = ['images/image_.jpg', 1, 5];
+
+	$form = $('#bs-config-form');
+	$form.on('submit', function(event) {
+		event.preventDefault();
+		applyToDemo();
+	});
+	$form.find('input,select').on('change', applyToDemo);
+
+	$('ul.actions').on('click', 'button', function(event) {
+		event.preventDefault();
+		$demo.find('.box').bgswitcher($(this).data('action'));
+	});
+
+	applyToDemo();
+
+	function applyToDemo() {
+		var config = {};
+
+		$.each($form.serializeArray(), function(i, param) {
+			if (param.value === 'true') {
+				param.value = true;
+			} else if (param.value === 'false') {
+				param.value = false;
+			} else if ($.isNumeric(param.value)) {
+				param.value = parseInt(param.value, 10);
+			}
+			config[param.name] = param.value;
+		});
+
+		$demo.find('.box').bgswitcher('destroy');
+		$demo.html(template);
+		$demo.find('.box').bgswitcher(config);
+	}
+}(jQuery);
+</script>
+
+</body>
+</html>

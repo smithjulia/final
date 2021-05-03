@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    text-align: center;
+}
+
+#leftcolumn {
+	background: url("img/sea.jpeg");
+	background-repeat: repeat;
+	background-size: 300px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left:0;
+	width: 15vw;
+	padding: 10px;
+	overflow-y: scroll;
+	text-align: center;
+	font-size: 10pt;
+}
+#rightcolumn {
+	background: url("img/sea.jpeg");
+	background-repeat: repeat;
+	background-size: 300px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 15vw;
+	overflow-y: scroll;
+	padding: 10px;
+	text-align: center;
+	font-size: 10pt;
+}
+#middlecolumn {
+	background: url("img/sand.gif");
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 15vw;
+	width: 70vw;
+	overflow-y: scroll;
+	padding: 10px;
+	text-align: center;
+	font-size: 10pt;
+	z-index: 0;
+}
+
+
+.mySlides {
+	display:none;
+	width: 100vw;
+	height: 100%;
+}
+
+.aa {
+	width: 10vw;
+}
+
+audio {
+	display: none;
+}
+
+
+#carousel {
+	width: 480px;
+	height: 320px;
+margin: 6vh auto auto auto;
+	border: 10px outset #EDEDCA;
+}
+
+#carousel:hover {
+	border: 10px inset #EDEDCA;
+}
+
+
+.marquee {
+	animation: marquee
+	    15s linear 0s infinite alternate;
+	    white-space: nowrap;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(15vw,0)
+    }
+
+    100% {
+       transform: translate(-15vw,0)
+    }
+}
