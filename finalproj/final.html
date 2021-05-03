@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>final</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<style>
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px black; 
+  background-color: #C0C0C0;
+}
+::-webkit-scrollbar-thumb {
+  background: #9F6070; 
+  border: 3px outset;
+  border-color: #E4D2DA #D0B1B8 #D0B1B8 #E4D2DA;
+}
+::-webkit-scrollbar-thumb:hover {
+   background: #9F6070; 
+  border: 3px inset;
+  border-color: #E4D2DA #D0B1B8 #D0B1B8 #E4D2DA;
+}
+
+</style>
+
+
+</head>
+<body>
+
+	<div class="background"><div class="fishes"></div></div>
+
+
+<div id="leftcolumn"><h3>the internet TWO</h3>
+<img src="img/mouse.gif" id="baby" width="200px"><br>please click the mouse to begin<br><br><img src="img/bestviewed.gif"><br><br>
+
+<!-- BEGIN CBOX - www.cbox.ws - v4.3 -->
+<div id="cboxdiv" style="position: relative; margin: 0 auto; width: 15vw; font-size: 0; line-height: 0;">
+<div style="position: relative; height: 50vh; overflow: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; border: 3px inset #ABABAB; border-bottom: 0px;"><iframe src="https://www6.cbox.ws/box/?boxid=860648&boxtag=NKUNDX&sec=main" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="90%" scrolling="auto" allowtransparency="yes" name="cboxmain6-860648" id="cboxmain6-860648"></iframe></div>
+<div style="position: relative; height: 90px; overflow: hidden; border: 3px inset #ABABAB; border-top: 0px;"><iframe src="https://www6.cbox.ws/box/?boxid=860648&boxtag=NKUNDX&sec=form" allow="autoplay" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="no" allowtransparency="yes" name="cboxform6-860648" id="cboxform6-860648"></iframe></div>
+</div>
+<!-- END CBOX -->	
+
+
+
+
+</div>
+
+<div id="rightcolumn">
+<div id="iframeHolder"></div>
+</div>
+
+
+
+</div><img src="img/leaves.gif" class="leaves">
+<img src="img/leaves2.gif" class="leaves2">
+<svg>
+    <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+        <feTurbulence id="sea-filter" numOctaves="3" seed="2" baseFrequency="0.02 0.05"></feTurbulence>
+        <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+        <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1" values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite"></animate>
+    </filter>
+</svg>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#baby').click(function(){
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<iframe id="iframe" src="innerwindow.html" width="100%" height="100%"></iframe>');
+        }
+    });   
+});
+</script>
+
+
+ 
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>final</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="test.css">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<style>
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px black; 
+  background-color: #C0C0C0;
+}
+::-webkit-scrollbar-thumb {
+  background: #9F6070; 
+  border: 3px outset;
+  border-color: #E4D2DA #D0B1B8 #D0B1B8 #E4D2DA;
+}
+::-webkit-scrollbar-thumb:hover {
+   background: #9F6070; 
+  border: 3px inset;
+  border-color: #E4D2DA #D0B1B8 #D0B1B8 #E4D2DA;
+}
+
+</style>
+
+</head>
+<body>
+<div class="box">
+
+</div>
+
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="jquery.bgswitcher.js"></script>
+
+
+<script>$(".box").bgswitcher({
+  images: ["img/target.jpeg",
+        "img/pit.jpeg",
+        "img/pool.jpeg",
+        "img/home.jpeg",
+        "img/pets.jpeg",
+        "img/google.jpeg",
+        "img/lips.jpeg",
+        "img/cat.jpeg",
+        "img/rain.jpeg",
+        "img/swamp.jpeg",
+        "img/3ft.jpeg",
+        "img/school.png",
+        "img/glass.jpeg",
+        "img/heaven.jpeg",
+        "img/sink.jpeg",
+        "img/rainbow.png",
+        "img/onigiri.jpeg"], // Background images
+  effect: "fade" // fade, blind, clip, slide, drop, hide
+});
+$(".box").bgswitcher ({
+  images: ["img/target.jpeg",
+        "img/pit.jpeg",
+        "img/pool.jpeg",
+        "img/home.jpeg",
+        "img/pets.jpeg",
+        "img/google.jpeg",
+        "img/lips.jpeg",
+        "img/cat.jpeg",
+        "img/rain.jpeg",
+        "img/swamp.jpeg",
+        "img/3ft.jpeg",
+        "img/school.png",
+        "img/glass.jpeg",
+        "img/heaven.jpeg",
+        "img/sink.jpeg",
+        "img/rainbow.png",
+        "img/onigiri.jpeg"], // Background images
+  effect: "fade", // fade, blind, clip, slide, drop, hide
+  interval: 3000, // Interval of switching
+  loop: true, // Loop the switching
+  shuffle: true, // Shuffle the order of an images
+  duration: 1000, // Effect duration
+  easing: "fade" // Effect easing
+});</script>
+
+
+
+
+ 
+</body>
+</html>

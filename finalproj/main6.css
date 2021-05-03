@@ -1,0 +1,68 @@
+* {
+	box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    text-align: center;
+    background: pink;
+}
+.container {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100vw;
+	height: 100%;
+	white-space: nowrap;
+
+}
+
+.sky {
+	background: url("img/sky.jpeg");
+	height: 100%;
+	width: 100%;
+	overflow-x: scroll;
+}
+
+.fence {
+	background:url("img/fence.jpeg");
+	height: 100%;
+	width: 100vw;
+	overflow-x: scroll;
+}
+
+.flowers {
+	background:url("img/flowers.jpeg");
+	height: 60%;
+	width: 100%;
+	overflow-x: scroll;
+}
+
+.grass {
+	background:url("img/grass.jpeg");
+	height: 60%;
+	width: 100%;
+	overflow-x: scroll;
+}
+
+.dirt {
+	background:url("img/dirt.jpeg");
+	height: 50%;
+	width: 100%;
+	overflow-x: scroll;
+}
+
+.flicker {
+		width: 75vw;
+		height: 40vh;
+		transform: perspective(400px) rotateX(20deg) skewX(1deg);
+		background: #ffffeb;
+		position: fixed;
+		top: -45vh;
+		left: 20vw;
+		z-index: 2;
+		border-radius: 0 0 40% 0%;
+		filter: blur(10px);
+			box-shadow: 9px 9px 100px 100px #ffffff;
+	}
